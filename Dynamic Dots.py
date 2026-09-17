@@ -217,5 +217,5 @@ def main_task2():
 
 
 
-if __name__ == "__main__task2":
-    main_task2()
+if __name__ == "__main__":
+    main_task2()    
