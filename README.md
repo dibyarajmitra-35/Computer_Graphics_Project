@@ -1,118 +1,206 @@
-# GravityMaze-RollingCube-
-# 🎮 Gravity Maze: Rolling Cube
+# 🎮 Computer Graphics Game Collection
 
-A 3D maze-based puzzle game developed using **Python, PyOpenGL, and GLUT**, where the player controls a rolling cube through progressively challenging maze levels.
+A collection of interactive **2D and 3D graphics-based games** developed using **Python, PyOpenGL, GLUT, and OpenGL** as part of the **BRAC University CSE423 Computer Graphics** course.
+
+The repository contains multiple games demonstrating practical applications of computer graphics, animation, keyboard interaction, collision detection, game-state management, object movement, transformations, and interactive gameplay.
+
+---
+
+## 🎮 Games Included
+
+### 🌧️ 1. Stormy Shelter
+
+A weather-based survival game where the player must navigate through a stormy environment while dealing with falling rain and environmental hazards.
+
+**Key Concepts:**
+
+* 🌧️ Animated rain
+* 🌩️ Storm/environment effects
+* 🏠 Shelter-based gameplay
+* 🎮 Keyboard interaction
+* 🔄 Real-time animation
+* 🖥️ OpenGL rendering
+
+**File:** `Stormy Shelter.py`
+
+---
+
+### 💎 2. Catch the Gem
+
+An interactive collection game where the player attempts to catch falling or moving gems while managing the game environment and score.
+
+**Key Concepts:**
+
+* 💎 Collectible objects
+* 🎯 Player-object interaction
+* 🕹️ Keyboard controls
+* 💥 Collision detection
+* 📊 Score/game-state management
+* 🔄 Real-time object movement
+
+**File:** `Catch the Gem.py`
+
+---
+
+### 🔫 3. Enemy Hunt
+
+A shooting-based action game where the player must target and eliminate enemies while managing bullets, lives, and gameplay conditions.
+
+**Key Concepts:**
+
+* 🔫 Shooting mechanics
+* 👾 Enemy movement
+* 🎯 Target detection
+* 💥 Collision detection
+* ❤️ Life/health system
+* 🪙 Score system
+* 🔄 Real-time animation
+* 🎮 Interactive controls
+
+**File:** `Enemy Hunt.py`
+
+---
+
+### 🎲 4. Gravity Maze: Rolling Cube
+
+A 3D maze-based puzzle game where the player controls a rolling cube through progressively challenging maze levels.
 
 The objective is to navigate through the maze, avoid hazards, collect rewards, activate checkpoints, and reach the goal while managing limited abilities and time.
 
-## ✨ Features
+**Key Features:**
 
-* 🎲 **3D Rolling Cube Gameplay**
-* 🧩 **Multiple Maze Levels**
-* 🗺️ **Procedurally Generated / Dynamic Level Structure**
-* 🏁 **Goal and Gate System**
-* ❤️ **Checkpoint System**
-* 🪙 **Collectible Coins**
-* ⏱️ **Time-Based Bonuses**
-* 🕳️ **Pit Hazards**
-* ⚠️ **Moving and Patrolling Hazards**
-* 🔄 **Rotating / Sliding Obstacles**
-* 💥 **Special Abilities**
+* 🎲 3D rolling cube gameplay
+* 🧩 Multiple maze levels
+* 🗺️ Dynamic maze structure
+* 🏁 Goal and gate system
+* ❤️ Checkpoint system
+* 🪙 Collectible coins
+* ⏱️ Time-based bonuses
+* 🕳️ Pit hazards
+* ⚠️ Moving and patrolling hazards
+* 🔄 Rotating/sliding obstacles
+* 💥 Special abilities
 
-  * `G` — Gravity Slam
-  * `V` — Vault
-  * `L` — Torch
-  * `N` — Marker
-  * `K` — Magnet
-* 📷 **Multiple Camera Modes**
-* 🔁 **Level Restart System**
-* 🎯 **Cheat Mode**
-* 🧭 **Progressive Difficulty**
+  * **G** — Gravity Slam
+  * **V** — Vault
+  * **L** — Torch
+  * **N** — Marker
+  * **K** — Magnet
+* 📷 Multiple camera modes
+* 🔁 Level restart system
+* 🎯 Cheat mode
+* 🧭 Progressive difficulty
 
-## 🕹️ Controls
+**File:** `Gravity_Maze_Rolling_Cube.py`
 
-| Key   | Action          |
-| ----- | --------------- |
-| `W`   | Move forward    |
-| `A`   | Move left       |
-| `S`   | Move backward   |
-| `D`   | Move right      |
-| `G`   | Gravity Slam    |
-| `V`   | Vault           |
-| `L`   | Toggle Torch    |
-| `N`   | Place Marker    |
-| `K`   | Activate Magnet |
-| `R`   | Restart Level   |
-| `C`   | Change Camera   |
-| `ESC` | Exit            |
+---
 
-> Controls may vary depending on the final implementation.
+# ✨ Graphics & Gameplay Concepts
 
-## 🧱 Levels
+Across the projects, the repository demonstrates several important **Computer Graphics** concepts:
 
-The game contains multiple maze sizes with increasing complexity:
+* 🖥️ OpenGL rendering
+* 🎨 2D and 3D graphics
+* 🔄 Object animation
+* 📐 Geometric transformations
+* 🎥 Camera systems
+* 🕹️ Keyboard interaction
+* 💥 Collision detection
+* 🎯 Object targeting
+* 🌧️ Particle-like effects
+* 👾 Enemy movement
+* 🧩 Maze generation and navigation
+* ❤️ Lives and checkpoints
+* 🪙 Collectibles and scoring
+* ⏱️ Time-based gameplay
+* 🎮 Game-state management
+* 🔁 Level progression
 
-* **6 × 6**
-* **8 × 8**
-* **10 × 10**
+---
 
-The goal location is selected based on maze traversal, with the game incorporating paths, gates, checkpoints, hazards, and collectibles to make each level more challenging.
+# 🧠 Algorithms & Game Logic
 
-## 🛠️ Technologies Used
+The projects combine graphics programming with interactive game logic.
+
+### Maze Navigation
+
+**Gravity Maze: Rolling Cube** uses **Breadth-First Search (BFS)** to analyze maze connectivity and determine suitable reachable goal locations.
+
+### Collision Detection
+
+The games use position/proximity-based logic to detect interactions between:
+
+* Player and enemies
+* Player and collectibles
+* Projectiles and enemies
+* Player and obstacles
+* Player and hazards
+* Player and goal objects
+
+### Animation
+
+Real-time animation is implemented by continuously updating object positions and redrawing the scene.
+
+Examples include:
+
+* Falling rain
+* Moving enemies
+* Moving collectibles
+* Rolling cube
+* Rotating obstacles
+* Patrolling hazards
+
+---
+
+# 🛠️ Technologies Used
 
 * **Python**
 * **PyOpenGL**
 * **GLUT**
 * **OpenGL**
 * **BFS (Breadth-First Search)**
-* 3D transformations and camera systems
-* Collision and proximity detection
-* Game-state management
+* **2D/3D transformations**
+* **Collision detection**
+* **Real-time animation**
+* **Game-state management**
 
-## 🧠 Algorithms & Game Logic
+---
 
-The project combines computer graphics concepts with algorithmic game logic.
+# 🕹️ Project Controls
 
-### BFS-Based Maze Navigation
+Controls vary between games depending on their gameplay mechanics.
 
-**Breadth-First Search (BFS)** is used to analyze the maze and determine reachable cells and suitable goal locations.
+### Gravity Maze: Rolling Cube
 
-### Dynamic Gameplay Systems
+| Key | Action          |
+| --- | --------------- |
+| W   | Move Forward    |
+| A   | Move Left       |
+| S   | Move Backward   |
+| D   | Move Right      |
+| G   | Gravity Slam    |
+| V   | Vault           |
+| L   | Toggle Torch    |
+| N   | Place Marker    |
+| K   | Activate Magnet |
+| R   | Restart Level   |
+| C   | Change Camera   |
+| ESC | Exit            |
 
-The game tracks:
+The controls for the other games may vary depending on their implementation.
 
-* Player position
-* Goal and gate locations
-* Hazard occupancy
-* Checkpoints
-* Coins
-* Time bonuses
-* Ability charges
-* Level progression
+---
 
-## 🎨 Graphics
+# 🚀 Getting Started
 
-The game uses OpenGL to render a 3D environment containing:
-
-* Maze walls
-* Rolling cube
-* Ground and obstacles
-* Collectibles
-* Hazards
-* Goal and gate
-* Lighting effects
-* Camera perspectives
-
-## 🚀 Getting Started
-
-### 1. Clone the repository
+## 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/GravityMaze-RollingCube.git
-cd GravityMaze-RollingCube
+git clone https://github.com/dibyarajmitra-35/Computer_Graphics_Project.git
+cd Computer_Graphics_Project
 ```
 
-### 2. Install dependencies
+## 2. Install Dependencies
 
 Make sure Python is installed, then install the required OpenGL packages:
 
@@ -120,50 +208,82 @@ Make sure Python is installed, then install the required OpenGL packages:
 pip install PyOpenGL PyOpenGL_accelerate
 ```
 
-### 3. Run the game
+## 3. Run a Game
+
+For example:
 
 ```bash
-python main.py
+python "Stormy Shelter.py"
 ```
 
-> Replace `main.py` with the actual entry-point filename if your project uses a different file.
+or:
 
-## 📁 Project Structure
+```bash
+python "Catch the Gem.py"
+```
+
+```bash
+python "Enemy Hunt.py"
+```
+
+```bash
+python "Gravity_Maze_Rolling_Cube.py"
+```
+
+---
+
+# 📁 Project Structure
 
 ```text
-GravityMaze-RollingCube/
+Computer_Graphics_Project/
 │
-├── main.py
-├── assets/
-├── src/
-├── README.md
-└── requirements.txt
+├── Catch the Gem.py
+├── Dynamic Dots.py
+├── Enemy Hunt.py
+├── Gravity_Maze_Rolling_Cube.py
+├── Stormy Shelter.py
+│
+├── Hello_openGL.py
+├── Lets_draw_sth.py
+│
+├── First Program.zip
+├── OpenGL.zip
+│
+├── .gitignore
+└── README.md
 ```
 
-The exact structure may vary depending on the final project organization.
+---
 
-## 🎓 Academic Project
+# 🎓 Academic Project
 
-This project was developed as part of a **Computer Graphics / OpenGL course project**.
+These projects were developed as part of the **CSE423 — Computer Graphics** course at **BRAC University**.
 
-The project demonstrates practical implementation of:
+The collection demonstrates practical implementation of:
 
+* 2D graphics
 * 3D graphics
 * OpenGL rendering
-* Camera transformations
-* Lighting
+* Animation
+* Transformations
+* Camera systems
 * Collision detection
-* BFS-based game logic
 * Interactive controls
 * Game-state management
-* Level design and progression
+* Algorithmic game logic
+* Level design
+* Real-time rendering
 
-## 👨‍💻 Authors
+---
+
+# 👨‍💻 Author
 
 **Dibyaraj Mitra**
 
-Developed as a group project for **BRAC University — CSE423 Computer Graphics**.
+Developed as part of the **BRAC University CSE423 Computer Graphics** course.
 
-## 📜 License
+---
 
-This project is intended primarily for **educational and academic purposes**.
+# 📜 License
+
+These projects are intended primarily for **educational and academic purposes**.
