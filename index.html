@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Computer Graphics Projects</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            color: #222;
+        }
+
+        header {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            margin: 0 0 15px;
+            font-size: 42px;
+        }
+
+        header p {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 45px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .section-title h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            color: #666;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 28px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+            transition: 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 22px rgba(0, 0, 0, 0.15);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            font-size: 22px;
+        }
+
+        .card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 10px 18px;
+            background: #222;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        .button:hover {
+            background: #444;
+        }
+
+        footer {
+            margin-top: 60px;
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Computer Graphics Project Collection</h1>
+        <p>BRAC University — CSE423 Computer Graphics</p>
+    </header>
+
+    <main class="container">
+
+        <div class="section-title">
+            <h2>My Projects</h2>
+            <p>A collection of my Computer Graphics projects.</p>
+        </div>
+
+        <div class="projects">
+
+            <!-- Catch the Gem -->
+            <div class="card">
+                <h3>Catch the Gem</h3>
+
+                <p>
+                    An interactive Computer Graphics game developed using
+                    Python and OpenGL.
+                </p>
+
+                <a class="button" href="Catch%20the%20Gem.py">
+                    View Project
+                </a>
+            </div>
+
+            <!-- Dynamic Dots -->
+            <div class="card">
+                <h3>Dynamic Dots</h3>
+
+                <p>
+                    An interactive graphics project demonstrating dynamic
+                    objects and movement using OpenGL.
+                </p>
+
+                <a class="button" href="Dynamic%20Dots.py">
+                    View Project
+                </a>
+            </div>
+
+            <!-- Enemy Hunt -->
+            <div class="card">
+                <h3>Enemy Hunt</h3>
+
+                <p>
+                    An interactive Computer Graphics game featuring
+                    enemies and player interaction.
+                </p>
+
+                <a class="button" href="Enemy%20Hunt.py">
+                    View Project
+                </a>
+            </div>
+
+            <!-- Gravity Maze -->
+            <div class="card">
+                <h3>Gravity Maze: Rolling Cube</h3>
+
+                <p>
+                    A 3D maze game where the player controls a rolling cube
+                    through different levels, obstacles, hazards, and goals.
+                </p>
+
+                <a class="button" href="Gravity_Maze_Rolling_Cube.py">
+                    View Project
+                </a>
+            </div>
+
+            <!-- Hello OpenGL -->
+            <div class="card">
+                <h3>Hello OpenGL</h3>
+
+                <p>
+                    An introductory OpenGL project created while learning
+                    the fundamentals of Computer Graphics.
+                </p>
+
+                <a class="button" href="Hello_openGL.py">
+                    View Project
+                </a>
+            </div>
+
+            <!-- Let's Draw -->
+            <div class="card">
+                <h3>Let's Draw Something</h3>
+
+                <p>
+                    A graphics project exploring drawing and rendering
+                    techniques using OpenGL.
+                </p>
+
+                <a class="button" href="Lets_draw_sth.py">
+                    View Project
+                </a>
+            </div>
+
+            <!-- Stormy Shelter -->
+            <div class="card">
+                <h3>Stormy Shelter</h3>
+
+                <p>
+                    An interactive Computer Graphics project featuring
+                    a stormy environment and gameplay.
+                </p>
+
+                <a class="button" href="Stormy%20Shelter.py">
+                    View Project
+                </a>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>BRAC University | CSE423 Computer Graphics</p>
+    </footer>
+
+</body>
+
+</html>
